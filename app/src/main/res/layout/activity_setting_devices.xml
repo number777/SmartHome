@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.number_7.navigation.SettingDevices"
+    android:background="#DCEDC8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alertpass"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tableRow" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NameDevice 1 :"
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txteditname1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow"
+            android:layout_below="@+id/tableRow2"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NameDevice 2 :"
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txteditname2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow"
+            android:layout_below="@+id/tableRow"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NameDevice 3 :"
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txteditname3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableRow"
+            android:layout_below="@+id/tableRow3"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NameDevice 4 :"
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txteditname4" />
+        </TableRow>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/settingErrorMsg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/linearLayout7" />
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#BBDEFB">
+
+
+        <Button
+            android:id="@+id/btnSaveDname"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:drawableLeft="@drawable/ic_save_white"
+            android:drawablePadding="-50dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="10dp"
+            android:text="@string/update"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+
+
+        <Button
+            android:id="@+id/btnCancel_device"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnUpdate"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_clear_white"
+            android:paddingLeft="60dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="-50dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="#1565C0"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_perm_device_info_grey600_48dp"
+        android:id="@+id/imageView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:gravity="center"
+        android:background="#1976D2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NAME DEVICE"
+        android:textColor="#ffffff"
+        style="@style/TextStyleBlack"
+        android:textStyle="bold"
+        android:id="@+id/textView12"
+        android:layout_toRightOf="@+id/imageView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_header_user2"
+        android:gravity="center"
+        android:text="แก้ไขชื่ออุปกรณ์แต่ละตัว"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#D50000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

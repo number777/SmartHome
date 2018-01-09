@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ongard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B2EBF2">
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#8BC34A"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView15"
+            android:background="#1B5E20"
+            android:paddingLeft="3dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_settings_system_daydream_black_48dp"/>
+
+        <TextView
+            android:id="@+id/txtconnect"
+            style="@style/heading_text"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="#2E7D32"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="IP Adress and Port"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#BBDEFB">
+
+
+        <Button
+            android:id="@+id/btn_settingPage_save"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="#1B5E20"
+            android:drawableLeft="@drawable/ic_save_white"
+            android:drawablePadding="-50dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="10dp"
+            android:text="@string/update"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_Cancel_server"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnUpdate"
+            android:layout_weight="1"
+            android:background="#1B5E20"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_clear_white"
+            android:paddingLeft="60dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="-50dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView28"
+                style="@style/TextStyleBlack"
+                android:layout_width="30dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.55"
+                android:text="IP Adress : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_IPServer"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="IP Adress"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView33"
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.38"
+                android:text="Port : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_Port"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="PORT"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/TextStyleBlack"
+                android:id="@+id/textView47"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.38"
+                android:text="เวลาออกจากระบบ : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_TimedLogout"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Timmer"
+                android:inputType="number"
+                android:layout_weight="0.40" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="นาที"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_arduino"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView16"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        style="@style/TextStyleBlack"
+        android:textColor="#1B5E20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Arduino Server"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/imageView16"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

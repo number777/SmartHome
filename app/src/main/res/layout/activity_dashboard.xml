@@ -1,0 +1,88 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_home_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="ควบคุม[เปิด-ปิด]"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/setting_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_settings_applications_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="ตั้งค่า"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/users_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_description_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="ประวัติการใช้งาน"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/name_device_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_perm_device_info_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="รายละเอียดการควบคุม"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/profile_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_account_box_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="เพิ่มผู้ใช้งาน"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/logout_btn"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/ic_exit_to_app_black_48dp"
+                android:onClick="onButtonClicker"
+                android:text="ออกจากระบบ"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

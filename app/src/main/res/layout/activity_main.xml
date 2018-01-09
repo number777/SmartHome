@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/ongard"
+    android:background="@drawable/bg_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Smart Home Control"
+        android:id="@+id/txtconnect"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:drawableTop="@drawable/ic_home"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtconnect"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/ln1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true">
+
+    </LinearLayout>
+
+
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginErrorMsg"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffff0000"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout4">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Username"
+            android:layout_weight="1"
+            android:hint="ชื่อผู้ใช้งาน"
+            android:layout_below="@+id/txtconnect"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/pword"
+            android:layout_weight="1"
+            android:hint="รหัสผ่าน"
+            android:layout_below="@+id/Username"
+            android:layout_alignRight="@+id/loginErrorMsg"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/button_default"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="#ffffff"
+        style="@style/ButtonText"
+        android:textSize="15dp"
+        android:id="@+id/login"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

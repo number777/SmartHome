@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main">
+
+    <TextView
+        android:id="@+id/settingErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="227dp"
+    android:id="@+id/layout_user"
+    >
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFEB3B"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:textColor="#009688"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shadowRadius="3"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowColor="#ffffff"
+        android:paddingLeft="5dp"
+        android:text="ผู้ใช้งาน"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView9"
+        android:src="@drawable/ic_account_box_black_48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F50057"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_description_black"
+            android:gravity="center"
+            android:text="รายละเอียดการตั้งค่า"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ref"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_sync_green"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="NAME :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="ชื่อผู้ใช้งาน" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableRow8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="เข้าใช้งานล่าสุด :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLastLogin"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameUser" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableRow9"
+            android:layout_alignLeft="@+id/tableRow9"
+            android:layout_alignStart="@+id/tableRow9" >
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="ออกจากระบบเมื่อ :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameUser" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableRow10"
+            android:layout_alignLeft="@+id/tableRow10"
+            android:layout_alignStart="@+id/tableRow10" >
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="สถานะการใช้งาน :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameUser" />
+        </TableRow>
+
+    </LinearLayout>
+</RelativeLayout>
+<TextView
+    android:shadowRadius="3"
+    android:textColor="#009688"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowColor="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:paddingLeft="5dp"
+    android:text="ชื่ออุปกรณ์"
+    android:textSize="20sp"
+    android:textStyle="bold"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFEB3B" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11"
+        android:layout_marginLeft="27dp">
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alertpass" >
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Device 1 :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextDeviceName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameDevice1"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow2" >
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Device 2 :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/editTextDeviceName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameDevice2"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow2" >
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Device 3 :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/editTextDeviceName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameDevice3"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow3" >
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Device 4 :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/editTextDeviceName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="NameDevice4"/>
+        </TableRow>
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_perm_device_info_black_48dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView11"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+            <TextView
+                android:shadowRadius="3"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#ffffff"
+                android:textColor="#009688"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:text="รายละเอียดSERVER"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFEB3B" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout18"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:layout_toEndOf="@+id/imageView12"
+                        android:layout_marginLeft="27dp">
+
+                        <TableRow
+                            android:id="@+id/tableRow6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/alertpass" >
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="IP Adress :"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txtIP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="3dp"
+                                android:text="NameDevice1"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/tableRow6" >
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Port :"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txtPort"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="3dp"
+                                android:text="NameDevice2"/>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tableRow7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/tableRow6" >
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="TimedLogout :"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/txtTimedLogout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="NameDevice2"/>
+                        </TableRow>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:src="@drawable/ic_settings_system_daydream_black_48dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView12"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#d3415d"
+        >
+
+        <Button
+            android:id="@+id/btn_Server"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_setting"
+            android:drawableLeft="@drawable/ic_settings_system_daydream_white"
+            android:drawablePadding="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="ตั้งค่าSERVER"
+            android:textColor="#ffffffff"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_device"
+            android:layout_toStartOf="@+id/btn_device"
+            android:layout_weight="1"
+            android:background="@drawable/btn_setting"
+            android:drawableLeft="@drawable/ic_account_box_white"
+            android:drawablePadding="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="ตั้งค่าผู้ใช้งาน"
+            android:textColor="#ffffffff"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btn_device"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_setting"
+            android:drawableLeft="@drawable/ic_perm_device_info_white"
+            android:drawablePadding="-5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="ตั้งค่าอุปกรณ์"
+            android:textColor="#ffffffff"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

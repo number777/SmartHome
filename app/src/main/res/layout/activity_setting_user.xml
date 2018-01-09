@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.number_7.navigation.SettingUser"
+    android:background="#B2EBF2">
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#8BC34A">
+
+        <ImageView
+            android:src="@drawable/ic_perm_identity_white_48dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#004D40"
+            android:id="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/txtconnect"
+            style="@style/heading_text"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="แก้ไขชื่อผู้ใช้งาน และรหัสผ่าน"
+            android:textColor="#ffffff"
+            android:background="#00695C"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="225dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearLayout12"
+        android:paddingLeft="3dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ชื่อผู้ใช้งาน : "
+                android:id="@+id/textView17"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:typeface="monospace"
+                android:id="@+id/editTextUsername"
+                android:hint="ชื่อผู้ใช้งาน" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="รหัสผ่านใหม่ : "
+                android:id="@+id/textView15"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextUserPass"
+                android:hint="รหัสผ่าน" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                style="@style/TextStyleBlack"
+                android:textStyle="bold"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="ยืนยัน : "
+                android:id="@+id/textView16"
+                android:textSize="17dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText2UserConfPass"
+                android:hint="ยืนยัน" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/btnSaveUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:drawableLeft="@drawable/ic_save_white"
+            android:drawablePadding="-15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/update"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/btnSavePassUserSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#009688"
+            android:text="@string/changpass"
+            android:drawableLeft="@drawable/ic_vpn_lock_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:drawablePadding="-15dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnSaveUsername"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_clear_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="-15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/imageView10"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:text="ผู้ใช้งานทั่วไป"
+        android:textSize="25dp"
+        android:background="@drawable/bg_header_user2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:paddingLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

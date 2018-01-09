@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="ApplicationName">ButtonStyle</string>
+    <string name="app_name">HomeAutomation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Welcome">Welcome to Home Automation</string>
+    <string name="Username">Username</string>
+    <string name="pass">Password</string>
+    <string name="Password">Password</string>
+    <string name="Username1">ชื่อผู้ใช้</string>
+    <string name="username">ชื่อผู้ใช้งาน :</string>
+    <string name="password">รหัสผ่าน :</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="register">ลงทะเบียน</string>
+    <string name="forget_pass">Forget Passsword</string>
+    <string name="title_activity_register">Register</string>
+    <string name="txt_register">Register : Home Automation</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm1">Confirm :</string>
+    <string name="email">อีเมลล์ :</string>
+    <string name="First_name">ชื่อ :</string>
+    <string name="Last_name">นามสกุล :</string>
+    <string name="Back">กลับ</string>
+    <string name="title_activity_registered">Registered</string>
+    <string name="Registered_at">Registered at :</string>
+    <string name="title_activity_home_ctrl">home_ctrl</string>
+    <string name="title_activity_password_reset">PasswordReset</string>
+    <string name="server">Server :</string>
+    <string name="server_status">Server Status :</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="sw1">SW1 :</string>
+    <string name="status">Status</string>
+    <string name="title_activity_setting">ตั้งค่า</string>
+    <string name="title_activity_profile">โปรไฟล์</string>
+    <string name="title_activity_tab_host">TabHost</string>
+    <string name="profile">โปรไฟล์</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="ip">IP Address :</string>
+    <string name="port">Port :</string>
+    <string name="setting">Setting Sys</string>
+    <string name="title_activity_user__control">หน้าหลัก : ผู้ใช้งาน</string>
+    <string name="title_activity_user_control">หน้าหลัก : ผู้ใช้งาน</string>
+    <string name="update">ยืนยัน</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="changpass">เปลี่ยนรหัสผ่าน</string>
+    <string name="id">ไอดี : </string>
+    <string name="title_activity_change_password">เปลี่ยนรหัสผ่าน</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_list_of__users">รายชื่อผู้ใช้งาน</string>
+    <string name="title_activity_user_list">รายชื่อสมาชิก</string>
+    <string name="title_activity_users_update">UsersUpdate</string>
+    <string name="title_activity_my_tab">MyTab</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_history">ประวัตการใช้งาน</string>
+    <string name="title_activity_setting_server">ตั้งค่าServer</string>
+    <string name="title_activity_setting_user">ตั้งค่าผู้ใช้งาน</string>
+    <string name="title_activity_setting_devices">ตั้งค่าอุปกรณ์</string>
+
+</resources>
